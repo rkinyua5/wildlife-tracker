@@ -4,6 +4,10 @@ import org.example.dao.impl.AnimalDAOImpl;
 import org.example.models.Animal;
 import org.sql2o.Sql2o;
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import static spark.Spark.*;
 
 public class Main {
@@ -16,9 +20,12 @@ public class Main {
         Sql2o sql2o = new Sql2o(databaseUrl, databaseUsername, databasePassword);
         AnimalDAOImpl animalDAO = new AnimalDAOImpl(sql2o);
         port(port == null ? 8000 : Integer.parseInt(port));
-
+        staticFileLocation("/static");
         get("/", (req, res) -> {
-            return "Setup";
+            List<Animal> animals = animalDAO.getAll();
+            Map<String, Object> body = new HashMap<>();
+            body.put("animals", animals);
+            return body;
         });
 
         post("/", (req, res) -> {

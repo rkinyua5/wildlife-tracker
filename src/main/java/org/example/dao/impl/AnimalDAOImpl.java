@@ -23,7 +23,7 @@ public class AnimalDAOImpl implements AnimalDAO {
                     .bind(animal)
                     .executeUpdate();
         } catch (Sql2oException ex) {
-            System.out.println(ex);
+            System.out.println(ex.getMessage());
         }
     }
 
@@ -35,7 +35,7 @@ public class AnimalDAOImpl implements AnimalDAO {
                     .bind(animal)
                     .executeUpdate();
         } catch (Sql2oException ex) {
-            System.out.println(ex);
+            System.out.println(ex.getMessage());
         }
     }
 
@@ -65,7 +65,7 @@ public class AnimalDAOImpl implements AnimalDAO {
                     .addParameter("id", id)
                     .executeUpdate();
         } catch (Sql2oException ex) {
-            System.out.println(ex);
+            System.out.println(ex.getMessage());
         }
     }
 }
