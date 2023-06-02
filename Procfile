@@ -1,1 +1,1 @@
-web:  mvn compile exec:java
+web:  java -jar wildlife-tracker\target\wildlife-tracker-jar-with-dependencies.jar
