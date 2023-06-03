@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 import static spark.Spark.*;
+import spark.ModelAndView;
 
 public class Main {
     private static final String port = System.getenv("PORT");
@@ -25,7 +26,7 @@ public class Main {
             List<Animal> animals = animalDAO.getAll();
             Map<String, Object> body = new HashMap<>();
             body.put("animals", animals);
-            return body;
+            return new ModelAndView(body, "animals.hbs");
         });
 
         post("/", (req, res) -> {
