@@ -1,10 +1,26 @@
 package org.example.models;
 
-public class EndangeredAnimal extends Animal{
+public class EndangeredAnimal{
+
+    private Integer id;
+
+    private Integer animalId;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     private String health;
 
-    public EndangeredAnimal(String name, String scientificName) {
-        super(name, scientificName);
+
+    public EndangeredAnimal(Integer animalId, String health, String age) {
+        this.health = health;
+        this.age = age;
+        this.animalId=animalId;
     }
 
     public String getHealth() {
@@ -24,4 +40,12 @@ public class EndangeredAnimal extends Animal{
     }
 
     private String age;
+
+    public Integer getAnimalId() {
+        return animalId;
+    }
+
+    public void setAnimalId(Integer animalId) {
+        this.animalId = animalId;
+    }
 }
