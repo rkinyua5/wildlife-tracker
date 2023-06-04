@@ -19,7 +19,7 @@ cd hero-squad
 ```
 
 ### Live site
-- The site can be accessed at [https://wildlife-tracker.herokuapp.com/](https://hero-squad.herokuapp.com/)
+- The site can be accessed at [https://wildlife-tracker.herokuapp.com/](https://wildlife-tracker.herokuapp.com/)
 
 ## License
 MIT License
