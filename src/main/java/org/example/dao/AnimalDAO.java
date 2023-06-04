@@ -5,7 +5,7 @@ import org.example.models.Animal;
 import java.util.List;
 
 public interface AnimalDAO {
-    void create(Animal animal);
+    Integer create(Animal animal);
     void update(Animal animal);
     List<Animal> getAll();
     Animal getById(Integer id);

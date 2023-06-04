@@ -16,20 +16,23 @@ public class AnimalDAOImpl implements AnimalDAO {
     }
 
     @Override
-    public void create(Animal animal) {
+    public Integer create(Animal animal) {
         String query = "INSERT INTO animals (name, scientific_name) VALUES (:name, :scientificName)";
         try (Connection con = sql2o.open()) {
-            con.createQuery(query, false)
+            return Integer.parseInt(con.createQuery(query, true)
                     .bind(animal)
-                    .executeUpdate();
+                    .executeUpdate()
+                    .getKey()
+                    .toString());
         } catch (Sql2oException ex) {
             System.out.println(ex.getMessage());
         }
+        return null;
     }
 
     @Override
     public void update(Animal animal) {
-        String sql = "UPDATE heroes SET (name, scientific_name) = (:name, :scientificName) WHERE id=:id";
+        String sql = "UPDATE animals SET (name, scientific_name) = (:name, :scientificName) WHERE id=:id";
         try (Connection con = sql2o.open()) {
             con.createQuery(sql, false)
                     .bind(animal)

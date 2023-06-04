@@ -1,0 +1,30 @@
+{{#partial "content"}}
+    <div class="row">
+        {{#if sightings}}
+            {{#each sightings}}
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            {{name}}
+                        </div>
+                        <div class="card-body">
+                            <blockquote class="blockquote mb-0">
+                                <p class="fw-bold fst-italic text-capitalize fs-6">{{scientificName}}</p>
+                                {{#if age}}
+                                    <p class="fs-6">The {{age}} animal is endangered and appears to be {{health}}.</p>
+                                {{else}}
+                                    <p class="fs-6">The animal is not endangered.</p>
+                                {{/if}}
+                                <p class="fs-6">Logged on {{formattedDate}}.</p>
+                                <p class="fs-6">Location: {{location}}</p>
+                                <footer class="blockquote-footer">{{rangerName}}</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        {{/if}}
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}
