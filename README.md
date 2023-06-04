@@ -15,7 +15,7 @@ Javan Oyugi
 - Clone the repository and navigate to the root of the repository
 ```
 git clone https://github.com/jvoyugi/wildlife-tracker.git
-cd hero-squad
+cd wildlife-tracker
 ```
 
 ### Live site
