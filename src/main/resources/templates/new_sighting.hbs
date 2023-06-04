@@ -1,0 +1,82 @@
+<form class="needs-validation" action="/" method="post" novalidate>
+    <div class="row mb-3">
+        <label for="common_name" class="col-sm-4 col-form-label">Common Name</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="common_name" name="common_name" required>
+        </div>
+        <div class="invalid-feedback">
+            Please enter the common name
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="scientific_name" class="col-sm-4 col-form-label">Scientific Name</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="scientific_name" name="scientific_name"  required>
+        </div>
+        <div class="invalid-feedback">
+            Please enter scientific name
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="age" class="col-sm-4 col-form-label">Age</label>
+        <div class="col-sm-8">
+            <select class="form-select" id="age" name="age" required>
+                <option value="newborn">Newborn</option>
+                <option value="young">Young</option>
+                <option value="adult">Adult</option>
+            </select>
+        </div>
+        <div class="invalid-feedback">
+            Please select a valid estimate age
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="health" class="col-sm-4 col-form-label">Health</label>
+        <div class="col-sm-8">
+            <select class="form-select" id="health" name="health" required>
+                <option value="healthy">Healthy</option>
+                <option value="okay">Okay</option>
+                <option value="healthy">Ill</option>
+            </select>
+        </div>
+        <div class="invalid-feedback">
+            Please select a health status.
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="status" class="col-sm-4 col-form-label">Status</label>
+        <div class="col-sm-8">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="status" name="status">
+                <label class="form-check-label" for="status">
+                    Endangered
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="location" class="col-sm-4 col-form-label">Location</label>
+        <div class="col-sm-8">
+            <select class="form-select" id="location" name="location" required>
+                <option value="Zone A">Zone A</option>
+                <option value="Near the River">Near the River</option>
+                <option value="NE Quadrant">NE Quadrant</option>
+            </select>
+        </div>
+        <div class="invalid-feedback">
+            Please select location.
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="ranger_name" class="col-sm-4 col-form-label">Ranger Name</label>
+        <div class="col-sm-8">
+            <input type="text" class="form-control" id="ranger_name" name="ranger_name" required>
+        </div>
+        <div class="invalid-feedback">
+            Please enter ranger name.
+        </div>
+    </div>
+    <div class="col-12">
+        <button class="btn btn-primary" type="submit">Record Sighting</button>
+    </div>
+</form>
