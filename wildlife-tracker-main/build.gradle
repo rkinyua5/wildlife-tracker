@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-group 'com.wildlifetracker.peter'
+group 'co.ke.safaricom'
 version '1.0-SNAPSHOT'
 
 
