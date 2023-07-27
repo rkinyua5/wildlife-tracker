@@ -19,12 +19,6 @@ An application that allows Rangers to track wildlife sightings in the area.
 - [Extras](#extras)
 
 
-
-## Technologies Used
-[![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
-
 ## Installation
 * `git clone <https://github.com/rkinyua5/wildlife-tracker.git>` this repository
 * `cd wildlife-tracker`
