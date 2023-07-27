@@ -1,5 +1,5 @@
 # Wildlife Tracker
-#### Wildlife Tracker, 2023
+
 #### By **Racheal Kinyua**
 ![](screenshots/screenshot1.png)
 ![]()
