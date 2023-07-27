@@ -1,6 +1,6 @@
 # Wildlife Tracker
 
-#### By **Racheal Kinyua**
+#### By **Racheal W Kinyua**
 ![](screenshots/screenshot1.png)
 ![]()
 ## Description
