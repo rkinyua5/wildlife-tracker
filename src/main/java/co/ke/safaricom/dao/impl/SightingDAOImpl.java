@@ -1,7 +1,7 @@
-package org.example.dao.impl;
+package co.ke.safaricom.dao.impl;
 
-import org.example.dao.SightingDAO;
-import org.example.models.Sighting;
+import co.ke.safaricom.dao.SightingDAO;
+import co.ke.safaricom.models.Sighting;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import org.sql2o.Sql2oException;

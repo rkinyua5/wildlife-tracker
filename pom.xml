@@ -70,7 +70,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>org.example.Main</mainClass>
+                            <mainClass>co.ke.safaricom.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

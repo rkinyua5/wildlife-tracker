@@ -1,4 +1,4 @@
-package org.example;
+package co.ke.safaricom;
 
 public class Constants {
     public static final String HEALTHY = "healthy";

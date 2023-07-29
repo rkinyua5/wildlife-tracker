@@ -1,7 +1,7 @@
-package org.example.dao.impl;
+package co.ke.safaricom.dao.impl;
 
-import org.example.dao.EndangeredAnimalDAO;
-import org.example.models.EndangeredAnimal;
+import co.ke.safaricom.models.EndangeredAnimal;
+import co.ke.safaricom.dao.EndangeredAnimalDAO;
 import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import org.sql2o.Sql2oException;

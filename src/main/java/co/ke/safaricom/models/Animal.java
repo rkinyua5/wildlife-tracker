@@ -1,4 +1,4 @@
-package org.example.models;
+package co.ke.safaricom.models;
 
 public class Animal {
     public Integer getId() {

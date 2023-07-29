@@ -1,6 +1,6 @@
-package org.example.dao;
+package co.ke.safaricom.dao;
 
-import org.example.models.EndangeredAnimal;
+import co.ke.safaricom.models.EndangeredAnimal;
 
 import java.util.List;
 

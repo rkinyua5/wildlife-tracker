@@ -1,6 +1,6 @@
-package org.example.dao;
+package co.ke.safaricom.dao;
 
-import org.example.models.Sighting;
+import co.ke.safaricom.models.Sighting;
 
 import java.util.List;
 
