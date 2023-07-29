@@ -20,6 +20,7 @@ CREATE TABLE endangered_animals(
     	  REFERENCES animals(id)
 );
 
+
 CREATE TABLE sightings(
     id SERIAL PRIMARY KEY,
     animal_id INTEGER,
